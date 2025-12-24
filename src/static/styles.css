@@ -160,8 +160,8 @@ footer {
 }
 
 .participants-list {
-  list-style: disc;
-  padding-left: 20px;
+  list-style: none;
+  padding-left: 0;
   color: #333;
   display: grid;
   gap: 6px;
@@ -172,6 +172,33 @@ footer {
   padding: 8px 10px;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.participant-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.participant-text {
+  flex: 1;
+}
+
+.delete-icon {
+  background: transparent;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 16px;
+  opacity: 0.6;
+  transition: opacity 0.2s, transform 0.2s;
+  border-radius: 4px;
+}
+
+.delete-icon:hover {
+  opacity: 1;
+  background-color: #ffebee;
+  transform: scale(1.1);
 }
 
 .participants-empty {
